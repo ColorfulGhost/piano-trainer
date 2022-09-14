@@ -9,11 +9,11 @@ import { initReactI18next } from 'react-i18next'
 import { AVAILABLE_LANGUAGES } from '../utils/languages'
 
 export const resources = {
-  en: {
-    translation: enTranslation,
-  },
   zh: {
     translation: zhTranslation,
+  },
+  en: {
+    translation: enTranslation,
   },
   fr: {
     translation: frTranslation,
@@ -30,7 +30,7 @@ export const resources = {
 } as const
 
 i18n.use(initReactI18next).init({
-  lng: AVAILABLE_LANGUAGES.en.code,
-  fallbackLng: AVAILABLE_LANGUAGES.en.code,
+  lng: AVAILABLE_LANGUAGES.zh.code,
+  fallbackLng: AVAILABLE_LANGUAGES.zh.code,
   resources,
 })
